@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undertale Arena</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    article {
+        filter: blur(.45px);
+    }
+
+    a.characterViewMore {
+        background-color: white;
+        flex: 1 2 30%;
+        height: 150px;
+        color: black;
+        text-align: center;
+    }
+
+    a.characterViewMore h1 {
+        font-size: xx-large;
+        margin: 0;
+        padding: 60px;
+        text-decoration: none;
+    }
+
+    a.characterViewMore:hover {
+        border: 5px solid #ffff00;
+    }
+
+    article.small .content {
+        height: 200px;
+        overflow: hidden;
+    }
+
+    article.big .content {
+        height: 380px;
+        overflow: hidden;
+    }
+
+    article.big {
+        flex: 2 1 100%;
+        height: 450px;
+    }
+
+    article.small {
+        flex: 1 2 30%;
+        height: 300px;
+    }
+
+    article a {
+        color: black;
+        background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(155, 155, 155, .9), rgb(255, 255, 255));
+        position: absolute;
+        margin: auto;
+        bottom: 0px;
+        width: 100%;
+        height: 40%;
+        text-align: center;
+        bottom: -5px;
+    }
+
+    .big a h1 {
+        font-size: xx-large;
+        padding-top: 120px;
+        margin: 0;
+    }
+
+    .small a h1 {
+        font-size: x-large;
+        padding-top: 60px;
+    }
+
+    h1 {
+
+        text-decoration: underline;
+    }
+
+    img {
+        clip: auto;
+    }
+    
+    @media screen and (max-width: 930px) {
+        .characterSection {
+            margin-top: 50px;
+        }
+    }
+</style>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="patchnotes.html">UPDATE LOGS</a></li>
+            <li><a href="">HOME</a></li>
+            <li><a href="characters.html">CHARACTERS</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="updatelogSection">
+            <article class="big">
+                <header>
+                    <h1>ROADMAP</h1>
+                </header>
+                <div class="content">
+                    Now that the error update is out, here is what we have planned for you all over the course of about
+                    a year.
+                    <br>
+                    <br>
+                    <em>NOTE: This is not everything. This is just what is publicly shown, every week or two will
+                        have characters.</em>
+                    <hr>
+                    <br>
+                    <b>Short Term (The next 4 or so months):</b>
+                    <ul>
+                        <li>Murder Sans</li>
+
+                        <li>Disbelief Papyrus (Hard Mode) Phase 1</li>
+
+                        <li>Altertale Update (Includes Ruins map V3)</li>
+
+                        <li>Free/UT Character Reworks/Remasters (Will Come Periodically), planned reworks right now are:
+                            Frisk,
+                            Papyrus, Muffet, Toriel, Undyne, Kid Asriel, sans.</li>
+
+                        <li>Miscellaneous map updates will also be a part of these weekly character updates, some major
+                            ones
+                            include: Grillby's Interior, Sans and Papyrus's rooms, Snowdin Shop, Tem shop, and more!
+                        </li>
+
+                        <li>Ink!Sans Phase 2 (Emotionless)</li>
+
+                        <li>Outer!Ink!Sans</li>
+
+                        <li>Blueberror</li>
+                    </ul>
+                </div>
+                <a href="patchnotes.html#roadmap">
+                    <h1>READ MORE</h1>
+                </a>
+            </article>
+            <article class="small">
+                <header>
+                    <h1>Balancing Patch #1</h1>
+                </header>
+                <div class="content">
+                    <b>BALANCING</b>
+                    <ol>
+                        <li>dash kick guarantee range lowered from 100 to 25 studs (in short it's effectively a hitbox
+                            nerf)
+                        </li>
+                        <li>spear of justice can be exploded early for more range but less damage (40 studs to 70 studs,
+                            250
+                            explosion damage to 100)
+                        <li>landing spear hurdle now teleports gtundyne to them (in the direction of the spear throw)
+                            they
+                            hit
+                            without iframes</li>
+                        <li>dash kick running penalty removed</li>
+                        <li>dash kick cooldowns on landing increased to 4 seconds</li>
+                        <li>betty scythe dash hitbox slightly longer (30 studs to 10 studs so it juts out infront of you
+                            i
+                            think)</li>
+                        <li>gtundyne teleport counter iframes 1 > .75</li>
+                    </ol>
+
+                </div>
+                <a href="patchnotes.html#1">
+                    <h1>READ MORE</h1>
+                </a>
+            </article>
+            <article class="small">
+                <header>
+                    <h1>Balancing Patch #2</h1>
+                </header>
+                <div class="content">
+                    <b>MISC</b>
+                    <ol>
+                        <li>falling off the map teleports you back to your save star instead of a random spot on the map
+                            unless
+                            you havent set it yet</li>
+                        <li>fixed negative gold</li>
+                        <li>fixed flee not working</li>
+                        <li>fixed genofrisk cutscene letting you move</li>
+                        <li>gtundyne teleport counter shows the iframes</li>
+                        <li>dodging input is client sided now</li>
+                        <li>gtundyne thrust doesn't fling you back if you use it while you get teleported (making it
+                            easier to
+                            move stack with teleport counter</li>
+                    </ol>
+                </div>
+                <a href="patchnotes.html#2">
+                    <h1>READ MORE</h1>
+                </a>
+            </article>
+
+        </section>
+        <section class="characterSection">
+            <article class="big">
+                <header>
+                    <h1>Papyrus</h1>
+                </header>
+                <div class="content">
+                    <h1>"The wanna-be royal guard."</h1>
+                    <hr>
+                    <img src="https://trello.com/1/cards/62323e1be393523b952cc07c/attachments/6279b5f062755d6fda48e7bf/previews/6279b60562755d6fda48e9a8/download/giphy.gif"
+                        width="100%">
+                </div>
+                <a href="characters.html#papyrus">
+                    <h1>Latest Character</h1>
+                </a>
+            </article>
+            <a href="characters.html" class="characterViewMore">
+                <h1>VIEW MORE CHARACTERS</h1>
+            </a>
+        </section>
+    </main>
+</body>
+
+</html>
